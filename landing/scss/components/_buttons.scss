@@ -1,0 +1,30 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/animations' as *;
+
+
+.btn-rounded {
+
+    
+    position: relative;
+    padding: 0.9rem 1rem 1rem 1rem;
+    font-weight: 700;
+    margin: 0;
+    border: 0.1rem solid rgba($white, 0.6);
+    background-color: $pink;
+
+        i {
+            color: $white;
+            font-size: 1rem;
+            line-height: 2.5rem;
+        }
+    
+
+ // & llama al padre
+
+    &:hover {
+        background-color: $indigo;
+        color: $white;
+    }
+
+}
