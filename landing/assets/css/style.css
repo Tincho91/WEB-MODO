@@ -10770,11 +10770,12 @@ textarea.form-control-lg {
 }
 .btn-rounded {
   position: relative;
-  padding: 0.9rem 1rem 1rem 1rem;
+  padding: 0.3rem 2rem 0.3rem 2rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  border: 0.01rem solid rgba(173, 181, 189, 0.6);
   background-color: #00A042;
+  color: #fff;
 }
 .btn-rounded i {
   color: #fff;
@@ -10782,7 +10783,7 @@ textarea.form-control-lg {
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
-  background-color: #6610f2;
+  background-color: #6f42c1;
   color: #fff;
 }
 
@@ -10797,8 +10798,9 @@ h2 {
 }
 .display-2--intro {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
+  font-size: 3rem;
 }
 .display-2--description {
   font-size: 1rem;
@@ -10891,10 +10893,22 @@ h2 {
 }
 
 .intro-section {
-  background-image: url();
-  padding: 7rem 0 0 0;
-  width: 100%;
-  height: 100%;
+  background-image: url(https://fibrasanjuan.com.ar/wp-content/uploads/2021/07/front-view-of-beautiful-woman-staying-on-laptop.jpg);
+  background-position: center center;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-section .intro-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6f42c1;
+}
+.intro-section .card-bg {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .companies {
