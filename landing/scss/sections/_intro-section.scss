@@ -12,11 +12,29 @@
 
     .intro-card {
         color: $purple;
-        width: 45rem;
+        
     }
 
     .card-bg {
-        background-color: rgba($color: #ffffff, $alpha: 0.8)
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+
+    .under-small-intro {
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        color: $purple;
+    }
+
+
+    @include media-breakpoint-up(md) {
+        .under-small-intro {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .intro-card {
+            display: none;
+        }
     }
 
 

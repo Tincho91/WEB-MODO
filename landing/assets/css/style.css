@@ -10914,10 +10914,23 @@ h2 {
 }
 .intro-section .intro-card {
   color: #6f42c1;
-  width: 45rem;
 }
 .intro-section .card-bg {
   background-color: rgba(255, 255, 255, 0.8);
+}
+.intro-section .under-small-intro {
+  background-color: white;
+  color: #6f42c1;
+}
+@media (min-width: 768px) {
+  .intro-section .under-small-intro {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro-section .intro-card {
+    display: none;
+  }
 }
 
 .companies {
