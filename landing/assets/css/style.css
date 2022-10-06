@@ -10776,6 +10776,7 @@ textarea.form-control-lg {
   border: none;
   background-color: #00A042;
   color: #fff;
+  transition: 0.3s ease-in-out;
 }
 .btn-rounded i {
   color: #fff;
