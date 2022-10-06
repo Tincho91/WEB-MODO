@@ -11,8 +11,8 @@
 
 
     .intro-card {
-        @include absoluteCenter;
         color: $purple;
+        width: 45rem;
     }
 
     .card-bg {

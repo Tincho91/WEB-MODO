@@ -5,30 +5,48 @@
 
 .menu {
 
+    font-family: "Roboto", Sans-serif;
+    white-space: nowrap;
+
     a {
         color: $white;
-        text-transform: capitalize;
-        font-weight: 900;
+        font-size: 1.2rem;
+        font-weight: 400;
 
         img {
             max-height: 7rem;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
     
+    .inicio {
+        color: $pink;
+    }
+
     li{
-        padding: 0 0.7rem;
+        padding: 0 1rem;
 
         a {
             color: $gray-700;
             text-transform: capitalize;
-            font-weight: 600;
+            font-weight: 500;
+            transition: transform 0.3s ease-in-out;
+
+            
 
             &:hover {
-                background-color: $gray-700;
-                color: $white;
+                transform: scale(1.2);
+                color: $pink
             }
+
 
         }
     }
+
+    
 
 }

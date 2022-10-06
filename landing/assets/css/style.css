@@ -10773,7 +10773,7 @@ textarea.form-control-lg {
   padding: 0.3rem 2rem 0.3rem 2rem;
   font-weight: 700;
   margin: 0;
-  border: 0.01rem solid rgba(173, 181, 189, 0.6);
+  border: none;
   background-color: #00A042;
   color: #fff;
 }
@@ -10788,18 +10788,18 @@ textarea.form-control-lg {
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", Sans-serif;
 }
 
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", Sans-serif;
 }
 .display-2--intro {
   display: inline-block;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", Sans-serif;
   font-size: 3rem;
 }
 .display-2--description {
@@ -10843,13 +10843,13 @@ h2 {
 }
 
 .display-3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", Sans-serif;
 }
 .display-3--title {
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", Sans-serif;
   display: inline-block;
   background-image: linear-gradient(to right, #493cff, #000);
   background-clip: text;
@@ -10871,25 +10871,37 @@ h2 {
   background: linear-gradient(to right, rgba(73, 60, 255, 0.95), rgba(0, 0, 0, 0.95));
 }
 
+.menu {
+  font-family: "Roboto", Sans-serif;
+  white-space: nowrap;
+}
 .menu a {
   color: #fff;
-  text-transform: capitalize;
-  font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .menu a img {
   max-height: 7rem;
+  transition: transform 0.3s ease-in-out;
+}
+.menu a img:hover {
+  transform: scale(1.2);
+}
+.menu .inicio {
+  color: #00A042;
 }
 .menu li {
-  padding: 0 0.7rem;
+  padding: 0 1rem;
 }
 .menu li a {
   color: #495057;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
 }
 .menu li a:hover {
-  background-color: #495057;
-  color: #fff;
+  transform: scale(1.2);
+  color: #00A042;
 }
 
 .intro-section {
@@ -10901,11 +10913,8 @@ h2 {
   background-size: cover;
 }
 .intro-section .intro-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #6f42c1;
+  width: 45rem;
 }
 .intro-section .card-bg {
   background-color: rgba(255, 255, 255, 0.8);
