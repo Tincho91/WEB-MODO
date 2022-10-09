@@ -1,0 +1,31 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.coverage-section {
+    background-image: url(../../img/bg-coverage.png);
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    &--title {
+        h2{
+        font-size: 3rem;
+        color: $purple;
+        font-weight: bold;
+        }
+    }
+
+    &--content {
+        color: $gray-600;
+    }
+
+    &--img {
+        
+    }
+
+    
+}

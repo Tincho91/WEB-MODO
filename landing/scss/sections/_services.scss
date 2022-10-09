@@ -1,55 +1,21 @@
 @use '../custom' as *;
 
-.services {
-    position: relative;
-    padding: 1rem 0;
-
-    &__content {
-        padding: 1rem;
-        margin-top: 0rem;
-
-        @include media-breakpoint-up(lg) {
-            margin-top: 5rem;
-        }
-
-        p {
-            font-size: 0.8rem;
-
-            @include media-breakpoint-up(lg) {
-                margin-top: 1rem;
-            }
-
-        }
-
-        .icon {
-            font-size: 1.5rem;
-            color: $primary;
-
-            @include media-breakpoint-up(lg) {
-                margin-top: 2.5rem;
-            }
-        }
-    }
-
-    &__pic {
-        max-width: 100%;
-    }
-
-}
-
 #services {
-    scroll-margin-top: 5rem;
-}
+    background-color: #ac44f6;
 
-@include media-breakpoint-down(lg) {
-    .row-2 {
+    i {
+        font-size: 3rem;
+        transition: transform 0.3s ease-in-out;
+        padding-bottom: 1rem;
 
-        .elem-2 {
-            order: 1;
+        &:hover {
+            transform: scale(1.2);
         }
-        
-        .elem-1 {
-            order: 2;
-        }
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
     }
 }
