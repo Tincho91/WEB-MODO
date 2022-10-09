@@ -10951,6 +10951,12 @@ h2 {
 .coverage-section--content {
   color: #6c757d;
 }
+.coverage-section--img img {
+  max-height: 16rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 #services {
   background-color: #ac44f6;
 }
