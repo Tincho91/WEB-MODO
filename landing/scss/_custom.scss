@@ -1,10 +1,9 @@
 // COLORES PRINCIPALES
 
-$blue-dark:    #493cff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #00A042;
-$red:     #dc3545;
+$main:    #064df2;
+$sub:     #000072;
+$gray:    #404041;
+
 
 
 
@@ -26,14 +25,14 @@ $black:    #000;
 
 // PALETA PPAL.
 
-$primary:       $blue-dark;
-$secondary:     $black;
-$footer:        $gray-900;
-$buttons:       $pink;
+$primary:       $main;
+$secondary:     $sub;
+
 
 
 
 // ACORDIONES
+
 $accordion-padding-y:                     1.5rem;
 $accordion-padding-x:                     1.5rem;
 $accordion-icon-color:                    $primary;

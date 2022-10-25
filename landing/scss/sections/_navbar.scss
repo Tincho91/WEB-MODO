@@ -14,7 +14,7 @@
         font-weight: 400;
 
         img {
-            max-height: 7rem;
+            max-width: 15rem;
             transition: transform 0.3s ease-in-out;
 
             &:hover {
@@ -24,14 +24,14 @@
     }
     
     .inicio {
-        color: $pink;
+        color: $primary;
     }
 
     li{
         padding: 0 1rem;
 
         a {
-            color: $gray-700;
+            color: $gray;
             text-transform: capitalize;
             font-weight: 500;
             transition: transform 0.3s ease-in-out;
@@ -40,10 +40,22 @@
 
             &:hover {
                 transform: scale(1.2);
-                color: $pink
+                color: $primary;
+
+                @include media-breakpoint-down(lg) {
+
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1);
+                        background-color: $gray;
+                        color: $white;
+                    }
+                }
             }
 
 
+           
         }
     }
 

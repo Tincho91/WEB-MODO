@@ -1,0 +1,45 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.contact {
+    &--title {
+        h2{
+        font-size: 3rem;
+        color: $purple;
+        font-weight: bold;
+        }
+    }
+    
+    &--info {
+        
+
+        a {
+            text-decoration: none;
+
+            i {
+                font-size: 3.5rem;
+                color: $purple;
+                transition: transform 0.3s ease-in-out;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    color: $pink;
+                }
+            }
+    
+            p {
+                font-family: "Roboto", Sans-serif;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                white-space: nowrap;
+                color: $gray-600;
+                font-weight: 400;
+            }
+        }
+        
+    }
+
+   
+
+}
