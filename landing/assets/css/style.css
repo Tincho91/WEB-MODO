@@ -10769,12 +10769,11 @@ textarea.form-control-lg {
   }
 }
 .btn-rounded {
-  position: relative;
   padding: 0.3rem 2rem 0.3rem 2rem;
   font-weight: 700;
   margin: 0;
   border: none;
-  background-color: #d63384;
+  background-color: #064df2;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
@@ -10788,8 +10787,11 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+* {
+  font-family: "Lato", sans-serif;
+}
+
 .menu {
-  font-family: "Roboto", Sans-serif;
   white-space: nowrap;
 }
 .menu a {
@@ -10831,6 +10833,17 @@ textarea.form-control-lg {
   }
 }
 
+#carousel {
+  height: 95vh;
+  width: 100%;
+}
+#carousel img {
+  object-fit: cover;
+  object-position: center center;
+  height: 95vh;
+  width: 100%;
+}
+
 .coverage-section {
   background-image: url(../../img/bg-coverage.png);
   background-position: center center;
@@ -10842,7 +10855,7 @@ textarea.form-control-lg {
 }
 .coverage-section--title h2 {
   font-size: 3rem;
-  color: #6f42c1;
+  color: #064df2;
   font-weight: bold;
 }
 .coverage-section--content {
@@ -10863,7 +10876,7 @@ textarea.form-control-lg {
 }
 
 #services {
-  background-color: #ac44f6;
+  background-color: #064df2;
 }
 #services i {
   font-size: 3rem;
@@ -10924,55 +10937,36 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
-.prices img {
-  min-width: 100%;
-  transition: 0.2s ease-in-out;
-}
-.prices img:hover {
-  transform: scale(0.95);
-}
 .prices--title h2 {
   font-size: 3rem;
-  color: #6f42c1;
+  color: #064df2;
   font-weight: bold;
 }
-.prices .card {
-  border-color: #ac44f6;
-  background-color: #ac44f6;
-  border-radius: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+.prices .promo {
+  width: 100%;
+  transition: 0.2s ease-in-out;
 }
-.prices .card-header {
-  background-color: #ac44f6;
-  border: none;
-  border-radius: 0;
+.prices .promo:hover {
+  transform: scale(0.95);
 }
-.prices .card-header .speed {
-  font-size: 2.3rem;
-  font-weight: bolder;
+.prices .price-img {
+  position: relative;
+  transition: all 2s linear;
 }
-.prices .card-body {
-  background-color: #ac44f6;
-  font-size: 1rem;
-  border: none;
+.prices .price-img .img-1 {
+  transition: all 2s linear;
 }
-.prices .card-body .price {
-  font-size: 3rem;
-  color: #02ddf7;
-  font-weight: bolder;
-  padding-bottom: 1rem;
+.prices .price-img .img-2 {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  z-index: 99;
+  top: 0;
+  left: 0;
 }
-.prices .card-body .btn-lg {
-  background-color: #02ddf7;
-  transition: 0.3s ease-in-out;
-}
-.prices .card-body .btn-lg:hover {
-  background-color: #d63384;
-  color: #fff;
-}
-.prices--footer {
-  color: #6c757d;
-  font-size: 1.2rem;
+.prices .price-img:hover .img-2 {
+  visibility: visible;
+  opacity: 1;
 }
 
 .portfolio {
@@ -11029,7 +11023,7 @@ textarea.form-control-lg {
 
 .contact--title h2 {
   font-size: 3rem;
-  color: #6f42c1;
+  color: #064df2;
   font-weight: bold;
 }
 .contact--info a {
@@ -11037,15 +11031,14 @@ textarea.form-control-lg {
 }
 .contact--info a i {
   font-size: 3.5rem;
-  color: #6f42c1;
+  color: #064df2;
   transition: transform 0.3s ease-in-out;
 }
 .contact--info a i:hover {
   transform: scale(1.2);
-  color: #d63384;
+  color: #000072;
 }
 .contact--info a p {
-  font-family: "Roboto", Sans-serif;
   font-size: 1.1rem;
   letter-spacing: 2px;
   white-space: nowrap;

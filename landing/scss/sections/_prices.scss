@@ -3,8 +3,16 @@
 
 .prices {
 
-    img {
-        min-width: 100%;
+    &--title {
+        h2{
+        font-size: 3rem;
+        color: $primary;
+        font-weight: bold;
+        }
+    }
+
+    .promo {
+        width: 100%;
 
         transition: 0.2s ease-in-out;
 
@@ -13,63 +21,31 @@
         }
     }
 
-    &--title {
-        h2{
-        font-size: 3rem;
-        color: $purple;
-        font-weight: bold;
+    .price-img {
+        position: relative;
+        transition: all 2s linear;
+
+        .img-1{
+            transition: all 2s linear;
         }
-    }
+        
 
-    .card {
-        border-color: #ac44f6;
-        background-color: #ac44f6;
-        border-radius: 0;
-        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
-
-        &-header {
-            background-color: #ac44f6;
-            border: none;
-            border-radius: 0;
-            
-            .speed {
-                font-size: 2.3rem;
-                font-weight: bolder;
-            }
-            
+        .img-2 {
+            visibility: hidden;
+            position: absolute;
+            opacity: 0;
+            z-index: 99;
+            top: 0;
+            left: 0;
         }
 
-        &-body{
-            background-color: #ac44f6;
-            
-            font-size: 1rem;
-            border: none;
-
-            .price {
-                font-size: 3rem;
-                color: #02ddf7;
-                font-weight: bolder;
-                padding-bottom: 1rem;
+        &:hover {
+            .img-2 {
+                visibility: visible;
+                opacity: 1;
             }
 
-            .btn-lg {
-                background-color: #02ddf7;
-                
-
-                transition: 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: $pink;
-                    color: $white;
-                }
-            }
-        }  
+        }
 
     }
-
-    &--footer {
-        color: $gray-600;
-        font-size: 1.2rem;
-    }
-
 }

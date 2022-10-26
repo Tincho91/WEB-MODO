@@ -5,23 +5,19 @@
 
 .btn-rounded {
     
-    position: relative;
     padding: 0.3rem 2rem 0.3rem 2rem;
     font-weight: 700;
     margin: 0;
     border: none;
-    background-color: $pink;
+    background-color: $primary;
     color: $white;
     transition: 0.3s ease-in-out;
 
-        i {
-            color: $white;
-            font-size: 1rem;
-            line-height: 2.5rem;
-        }
-    
-
- // & llama al padre
+    i {
+        color: $white;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
 
     &:hover {
         background-color: $purple;

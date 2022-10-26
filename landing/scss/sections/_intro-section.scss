@@ -1,3 +1,19 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+
+
+#carousel {
+
+    height: 95vh;
+    width: 100%;
+
+    img {
+        object-fit: cover;
+        object-position: center center;
+        height: 95vh;
+        width: 100%;
+        
+    }
+
+}

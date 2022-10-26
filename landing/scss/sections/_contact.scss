@@ -6,7 +6,7 @@
     &--title {
         h2{
         font-size: 3rem;
-        color: $purple;
+        color: $primary;
         font-weight: bold;
         }
     }
@@ -19,17 +19,16 @@
 
             i {
                 font-size: 3.5rem;
-                color: $purple;
+                color: $primary;
                 transition: transform 0.3s ease-in-out;
     
                 &:hover {
                     transform: scale(1.2);
-                    color: $pink;
+                    color: $secondary;
                 }
             }
     
             p {
-                font-family: "Roboto", Sans-serif;
                 font-size: 1.1rem;
                 letter-spacing: 2px;
                 white-space: nowrap;
