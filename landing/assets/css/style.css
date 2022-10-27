@@ -10806,6 +10806,16 @@ textarea.form-control-lg {
 .menu a img:hover {
   transform: scale(1.2);
 }
+@media (min-width: 1400px) {
+  .menu a img {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .menu a {
+    font-size: 1.5rem;
+  }
+}
 .menu .inicio {
   color: #064df2;
 }
@@ -10843,6 +10853,11 @@ textarea.form-control-lg {
   height: 95vh;
   width: 100%;
 }
+@media (min-width: 1400px) {
+  #carousel img {
+    top: 0;
+  }
+}
 
 .coverage-section {
   background-image: url(../../img/bg-coverage.png);
@@ -10875,21 +10890,44 @@ textarea.form-control-lg {
   }
 }
 
-#services {
+.services-section {
   background-color: #064df2;
 }
-#services i {
+.services-section i {
   font-size: 3rem;
   transition: transform 0.3s ease-in-out;
   padding-bottom: 1rem;
 }
-#services i:hover {
+.services-section i:hover {
   transform: scale(1.2);
 }
-#services h3 {
+.services-section h3 {
   font-size: 1.3rem;
   font-weight: bold;
   padding-bottom: 1rem;
+}
+@media (min-width: 1400px) {
+  .services-section i {
+    font-size: 5rem;
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 1rem;
+  }
+  .services-section i:hover {
+    transform: scale(1.2);
+  }
+  .services-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  .services-section p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-section .service-element--center {
+    padding: 4rem 0 4rem 0;
+  }
 }
 
 .testimonials {

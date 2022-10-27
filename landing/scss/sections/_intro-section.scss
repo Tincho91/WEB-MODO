@@ -13,7 +13,10 @@
         object-position: center center;
         height: 95vh;
         width: 100%;
-        
+
+        @include media-breakpoint-up(xxl) {
+            top: 0;
+        }
     }
 
 }

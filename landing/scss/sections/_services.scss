@@ -1,6 +1,6 @@
 @use '../custom' as *;
 
-#services {
+.services-section {
     background-color: $primary;
 
     i {
@@ -17,5 +17,34 @@
         font-size: 1.3rem;
         font-weight: bold;
         padding-bottom: 1rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+
+        i {
+            font-size: 5rem;
+            transition: transform 0.3s ease-in-out;
+            padding-bottom: 1rem;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .service-element--center {
+        @include media-breakpoint-down(md) {
+            padding: 4rem 0 4rem 0;
+        }
     }
 }

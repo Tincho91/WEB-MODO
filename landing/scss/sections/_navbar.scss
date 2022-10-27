@@ -19,6 +19,14 @@
             &:hover {
                 transform: scale(1.2);
             }
+
+            @include media-breakpoint-up(xxl) {
+                max-width: 25rem;
+            }
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 1.5rem;
         }
     }
     
