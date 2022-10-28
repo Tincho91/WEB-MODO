@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
+@use '../components/typography' as *;
 
 .prices {
 
@@ -20,6 +21,28 @@
             transform: scale(0.95);
         }
     }
+
+    .card {
+        background-color: $secondary;
+        max-height: 17rem;
+        max-width: 17rem;
+        
+        h5 {
+            font-size: 2.5rem;
+            white-space: nowrap;
+            font-weight: 700;
+        }
+
+        a {
+            font-size: 1.4rem;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        
+    
+    }
+
 
     .price-img {
         position: relative;

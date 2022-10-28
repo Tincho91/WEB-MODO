@@ -10987,6 +10987,21 @@ textarea.form-control-lg {
 .prices .promo:hover {
   transform: scale(0.95);
 }
+.prices .card {
+  background-color: #000072;
+  max-height: 17rem;
+  max-width: 17rem;
+}
+.prices .card h5 {
+  font-size: 2.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.prices .card a {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  font-weight: 500;
+}
 .prices .price-img {
   position: relative;
   transition: all 2s linear;
