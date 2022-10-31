@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
+@use '../components/typography'as *;
 
 .coverage-section {
     background-image: url(../../img/bg-coverage.png);
