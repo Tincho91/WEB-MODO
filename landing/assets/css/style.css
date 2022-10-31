@@ -11000,26 +11000,55 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
+#prices {
+  position: relative;
+  overflow-x: hidden;
+}
+#prices .prices-bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c757d 50%, #f8f9fa 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#prices .prices-bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+#prices .prices-bg3 {
+  animation-duration: 5s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 #prices .prices--title h2 {
   font-size: 3rem;
   color: #064df2;
   font-weight: bold;
 }
+#prices .promo {
+  transition: transform 0.3s ease-in-out;
+}
+#prices .promo:hover {
+  transform: scale(0.9);
+}
 #prices .card {
   background: linear-gradient(0deg, #404041, #000072);
   background-size: 400% 400%;
-  animation: CardBgAnim 6s ease infinite;
+  transition: transform 0.3s ease-in-out;
 }
-@keyframes CardBgAnim {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
+#prices .card:hover {
+  transform: scale(1.05);
 }
 #prices h2 {
   font-size: 3rem;
