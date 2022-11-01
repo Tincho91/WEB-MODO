@@ -12,6 +12,9 @@
     background-color: $primary;
     color: $white;
     transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    border-radius: 20px;
 
     i {
         color: $white;

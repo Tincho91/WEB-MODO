@@ -1,12 +1,51 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
+@use '../components/buttons' as *;
 
 
 
 #carousel {
-
     height: 95vh;
     width: 100%;
+
+    .carousel-item {
+
+        .caption {
+
+            .item-wraper-1 {
+                background-color: rgba($color: $primary, $alpha: 0.3);
+                width: 25rem;
+
+                @include media-breakpoint-up(lg) {
+                    transform: translateX(100px);
+                }
+
+                h5 {
+                    font-size: 3rem;
+                }
+            }
+
+            .item-wraper-2 {
+                background-color: rgba($color: $primary, $alpha: 0.3);
+                width: 15em;
+                visibility: hidden;
+
+                @include media-breakpoint-down(md) {
+                    visibility: visible;
+                }
+
+
+                h5 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 50px;
+            }
+
+        }
+    }
 
     img {
         object-fit: cover;
