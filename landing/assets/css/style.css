@@ -10775,7 +10775,7 @@ textarea.form-control-lg {
   border: none;
   background-color: #064df2;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: animation 0.3s ease-in-out;
   font-size: 1.5rem;
   white-space: nowrap;
   border-radius: 20px;
@@ -10786,7 +10786,21 @@ textarea.form-control-lg {
   line-height: 2.5rem;
 }
 .btn-rounded:hover {
-  scale: 1.05;
+  background: linear-gradient(328deg, #404041, #064df2, #404041);
+  background-size: 600% 600%;
+  color: #fff;
+  animation: AnimationName 9s ease infinite;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 17% 0%;
+  }
+  50% {
+    background-position: 84% 100%;
+  }
+  100% {
+    background-position: 17% 0%;
+  }
 }
 
 * {
@@ -10846,7 +10860,7 @@ textarea.form-control-lg {
 }
 
 #carousel {
-  max-height: 95vh;
+  height: 95vh;
   width: 100%;
 }
 #carousel .carousel-item .caption .item-wraper-1-1 {
@@ -10891,10 +10905,16 @@ textarea.form-control-lg {
   font-size: 3rem;
   font-weight: 800;
 }
+#carousel .carousel-item .caption .item-wraper-1-3 p {
+  font-size: 1.5rem;
+}
 #carousel .carousel-item .caption .item-wraper-2 {
   background-color: rgba(97, 148, 199, 0.4);
-  overflow: visible;
   visibility: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15vh auto;
 }
 @media (max-width: 767.98px) {
   #carousel .carousel-item .caption .item-wraper-2 {
@@ -10914,11 +10934,6 @@ textarea.form-control-lg {
   object-position: center center;
   height: 95vh;
   width: 100%;
-}
-@media (min-width: 1400px) {
-  #carousel img {
-    top: 0;
-  }
 }
 
 .coverage-section {

@@ -4,18 +4,18 @@
 
 
 .btn-rounded {
-    
+
     padding: 0.3rem 2rem 0.3rem 2rem;
     font-weight: 700;
     margin: 0;
     border: none;
     background-color: $primary;
     color: $white;
-    transition: all 0.3s ease-in-out;
+    transition: animation 0.3s ease-in-out;
     font-size: 1.5rem;
     white-space: nowrap;
     border-radius: 20px;
-    
+
 
     i {
         color: $white;
@@ -24,7 +24,25 @@
     }
 
     &:hover {
-        scale: 1.05;
+        background: linear-gradient(328deg, $gray, $primary, $gray);
+        background-size: 600% 600%; 
+        color: $white;
+        animation: AnimationName 9s ease infinite;
+
+
+        @keyframes AnimationName {
+            0% {
+                background-position: 17% 0%
+            }
+
+            50% {
+                background-position: 84% 100%
+            }
+
+            100% {
+                background-position: 17% 0%
+            }
+        }
     }
 
 }
