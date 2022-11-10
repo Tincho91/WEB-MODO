@@ -2,9 +2,6 @@
 @use '../components/mixins'as *;
 @use '../components/typography'as *;
 
-$nodeStreak: #a2cef4;
-$computationalFogTop: #6084d7;
-$computationalFogBot: #6084d7;
 $visualDistortionZapper: 360px;
 $nanoVelocity: 2s;
 
@@ -86,7 +83,7 @@ $nanoVelocity: 2s;
         border: none;
 
         .card-title {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 700;
         }
 
