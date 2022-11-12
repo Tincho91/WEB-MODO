@@ -23,3 +23,9 @@
     transition-duration: 1s;
     transition-property: all;
 }
+
+@mixin horizontalScreen1() {
+    @if (orientation: landscape) {
+        font-size: 8vh;
+    }
+}
