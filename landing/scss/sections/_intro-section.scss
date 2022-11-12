@@ -13,67 +13,84 @@
 
             .caption {
 
+                //BANNER 1
+
                 .item-wraper-1-1 {
                     background-color: rgba($color: $t-bg, $alpha: 0.4);
-                    width: 60%;
+                    width: 30vw;
+                    display: flex;
+                    flex-direction: column;
+                    
 
                     h5 {
-                        font-size: 3rem;
+                        font-size: 3vw;
                         font-weight: 800;
-
-                        @include media-breakpoint-down(lg) {
-                            font-size: 6vh;
-                        }
-                    }
-
-                    @include media-breakpoint-up(lg) {
-                        transform: translateX(100px);
-                        max-width: 40%;
-                    }
-
-                }
-
-                .item-wraper-1-2 {
-                    background-color: rgba($color: $t-bg, $alpha: 0.4);
-                    width: 60%;
-                    position: relative;
-                    float: right;
-
-
-                    @include media-breakpoint-up(lg) {
-                        
-                        max-width: 40%;
-                    }
-
-                    h5 {
-                        font-size: 3rem;
-                        font-weight: 800;
-                        
-
-                        @include media-breakpoint-down(lg) {
-                            font-size: 6vh;
-                        }
                     }
 
                     button {
+                        font-size: 2vw;
+                        border-radius: 120px;
+                        padding: 0.3rem;
+                        width: 18vw;
+
+                        i {
+                            font-size: inherit;
+                        }
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        transform: translateX(8vw);
+                    }
+
+                    @media (max-device-height: 650px) {
                         position: absolute;
-                        margin-top: 50px;
-                        transform: translateX(-230px);
-                        font-size: 3.8vh;
+                        top: -15vh;
                     }
                 }
+
+
+                //BANNER 2
+
+                .item-wraper-1-2 {
+                    background-color: rgba($color: $t-bg, $alpha: 0.4);
+                    width: 30vw;
+                    display: flex;
+                    flex-direction: column;
+                    float: right;
+                    position: relative;
+
+                    h5 {
+                        font-size: 4vw;
+                        font-weight: 800;
+                    }
+
+                    button {
+                        padding: 0.3rem 3rem 0.3rem 3rem;
+                        position: absolute;
+                        font-size: 2.8vw;
+                        top: 115%;
+                        align-self: center;
+                        border-radius: 50px;
+                    }
+
+                    @media (max-device-height: 650px) {
+                        top: -15vh;
+                    }
+                }
+
+                //BANNER 3
 
                 .item-wraper-1-3 {
                     background-color: rgba($color: $t-bg, $alpha: 0.4);
                     width: 28vw;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    
 
 
                     h5 {
                         font-size: 3.3vw;
-                        font-weight: 800;
+                        font-weight: 900;
                     }
 
                     button {
@@ -81,7 +98,9 @@
                         margin-left: -10rem;
                         margin-right: -10rem;
                         font-size: 7vw;
+                        font-weight: 900;
                         border-radius: 90px;
+                        align-self: center;
                     }
 
                     p {
@@ -90,6 +109,10 @@
 
                     @include media-breakpoint-up(xxl) {
                         transform: translateX(9vw);
+
+                        button {
+                            border-radius: 150px;
+                        }
                     }
 
                     @include media-breakpoint-down(xxl) {
@@ -100,8 +123,9 @@
                         position: absolute;
                         top: -15vh;
                     }
-                  
                 }
+
+                //SMALL DEVICES WRAPPER
 
                 .item-wraper-2 {
                     background-color: rgba($color: $t-bg, $alpha: 0.4);
@@ -111,14 +135,16 @@
                     right: 0;
                     height: 15vh auto;
 
-
-
                     @include media-breakpoint-down(md) {
                         visibility: visible;
                     }
 
                     h5 {
                         font-size: 5vw;
+                    }
+
+                    button {
+                        padding: 0.3rem 3.5rem 0.3rem 3.5rem;
                     }
                 }
 
