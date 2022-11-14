@@ -16,16 +16,3 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-// TRANSITION
-
-@mixin transitionProperty {
-    transition-duration: 1s;
-    transition-property: all;
-}
-
-@mixin horizontalScreen1() {
-    @if (orientation: landscape) {
-        font-size: 8vh;
-    }
-}
