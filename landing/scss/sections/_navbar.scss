@@ -5,32 +5,32 @@
 
     white-space: nowrap;
 
-    a {
-        color: $white;
-        font-size: 1.45vw;
+    img {
+        max-width: 20rem;
+        transition: transform 0.3s ease-in-out;
+        padding-left: 5vw;
+        
 
-        img {
-            max-width: 20rem;
-            transition: transform 0.3s ease-in-out;
-            padding-left: 5vw;
+        &:hover {
+            transform: scale(1.2);
 
-            &:hover {
-                transform: scale(1.2);
-            }
-
-            @include media-breakpoint-up(xxl) {
-                max-width: 25rem;
-            }
-
-            @include media-breakpoint-down(sm){
-                padding-left: 0;
-                max-width: 65vw;
+            @include media-breakpoint-down(sm) {
+                transform: scale(1.05);
             }
         }
 
         @include media-breakpoint-up(xxl) {
-            font-size: 1.5rem;
+            max-width: 25rem;
         }
+
+        @include media-breakpoint-down(sm){
+            padding-left: 0;
+            max-width: 65vw;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: 1.5rem;
     }
 
     .inicio {
@@ -41,16 +41,32 @@
         padding: 0 1rem;
 
         a {
+            font-size: 1.45vw;
             color: $gray;
             font-weight: 500;
             transition: transform 0.3s ease-in-out;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 2.3vw;
+                padding-left: 5vw;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 2.7vw;
+                padding-left: 5vw;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 3.5vw;
+                padding-left: 0;
+            }
 
             &:hover {
                 transform: scale(1.2);
                 color: $primary;
 
                 @include media-breakpoint-down(lg) {
-
+                    
                     transition: all 0.3s ease-in-out;
 
                     &:hover {

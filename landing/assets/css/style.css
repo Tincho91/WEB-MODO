@@ -10801,31 +10801,32 @@ textarea.form-control-lg {
 .menu {
   white-space: nowrap;
 }
-.menu a {
-  color: #fff;
-  font-size: 1.45vw;
-}
-.menu a img {
+.menu img {
   max-width: 20rem;
   transition: transform 0.3s ease-in-out;
   padding-left: 5vw;
 }
-.menu a img:hover {
+.menu img:hover {
   transform: scale(1.2);
 }
+@media (max-width: 575.98px) {
+  .menu img:hover {
+    transform: scale(1.05);
+  }
+}
 @media (min-width: 1400px) {
-  .menu a img {
+  .menu img {
     max-width: 25rem;
   }
 }
 @media (max-width: 575.98px) {
-  .menu a img {
+  .menu img {
     padding-left: 0;
     max-width: 65vw;
   }
 }
 @media (min-width: 1400px) {
-  .menu a {
+  .menu {
     font-size: 1.5rem;
   }
 }
@@ -10836,9 +10837,28 @@ textarea.form-control-lg {
   padding: 0 1rem;
 }
 .menu li a {
+  font-size: 1.45vw;
   color: #404041;
   font-weight: 500;
   transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .menu li a {
+    font-size: 2.3vw;
+    padding-left: 5vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu li a {
+    font-size: 2.7vw;
+    padding-left: 5vw;
+  }
+}
+@media (max-width: 575.98px) {
+  .menu li a {
+    font-size: 3.5vw;
+    padding-left: 0;
+  }
 }
 .menu li a:hover {
   transform: scale(1.2);
@@ -11006,7 +11026,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .coverage-section--title h2 {
-    font-size: 11vw;
+    font-size: 10.5vw;
   }
 }
 .coverage-section--content {
@@ -11129,7 +11149,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   #prices .prices--title h2 {
-    font-size: 11vw;
+    font-size: 10.5vw;
   }
 }
 #prices .promo {
@@ -11175,7 +11195,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .contact--title h2 {
-    font-size: 11vw;
+    font-size: 10.5vw;
   }
 }
 .contact--info a {
