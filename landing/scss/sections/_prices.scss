@@ -1,13 +1,13 @@
 @use '../custom'as *;
-@use '../components/mixins'as *;
-@use '../components/typography'as *;
 
 $visualDistortionZapper: 360px;
 $nanoVelocity: 2s;
 
 #prices {
+    scroll-margin-top: 6vh;
     position: relative;
     overflow-x: hidden;
+    
 
     .prices-bg {
         animation:slide 3s ease-in-out infinite alternate;
@@ -45,6 +45,10 @@ $nanoVelocity: 2s;
             font-size: 3rem;
             color: $primary;
             font-weight: bold;
+            
+            @include media-breakpoint-down(sm) {
+                font-size: 11vw;
+            }
         }
     }
 

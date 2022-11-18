@@ -1,7 +1,5 @@
 @use '../custom' as *;
-@use '../components/mixins' as *;
 @use '../components/buttons' as *;
-@use '../components/typography' as *;
 
 #home {
     
@@ -165,7 +163,5 @@
             height: 85vh;
             width: 100%;
         }
-
     }
-
 }

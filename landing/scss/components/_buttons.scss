@@ -1,7 +1,4 @@
 @use '../custom' as *;
-@use '../components/mixins' as *;
-@use '../components/animations' as *;
-
 
 .btn-rounded {
 
@@ -15,7 +12,6 @@
     font-size: 1.5rem;
     white-space: nowrap;
     border-radius: 20px;
-
 
     i {
         color: $white;
@@ -44,5 +40,4 @@
             }
         }
     }
-
 }

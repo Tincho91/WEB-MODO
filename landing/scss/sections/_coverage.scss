@@ -1,5 +1,4 @@
 @use '../custom' as *;
-@use '../components/mixins' as *;
 @use '../components/typography'as *;
 
 .coverage-section {
@@ -8,13 +7,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    scroll-margin-top: 6vh;
 
     &--title {
         h2{
         font-size: 3rem;
         color: $primary;
         font-weight: bold;
+        
+            @include media-breakpoint-down(sm) {
+                font-size: 11vw;
+            }
         }
     }
 
@@ -42,6 +45,4 @@
             }
         }
     }
-
-    
 }

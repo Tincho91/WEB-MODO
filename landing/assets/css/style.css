@@ -10758,16 +10758,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@keyframes pulse-border {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
 .btn-rounded {
   padding: 0.3rem 2rem 0.3rem 2rem;
   font-weight: 700;
@@ -10813,12 +10803,12 @@ textarea.form-control-lg {
 }
 .menu a {
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.45vw;
 }
 .menu a img {
-  max-width: 15rem;
+  max-width: 20rem;
   transition: transform 0.3s ease-in-out;
+  padding-left: 5vw;
 }
 .menu a img:hover {
   transform: scale(1.2);
@@ -10826,6 +10816,12 @@ textarea.form-control-lg {
 @media (min-width: 1400px) {
   .menu a img {
     max-width: 25rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .menu a img {
+    padding-left: 0;
+    max-width: 65vw;
   }
 }
 @media (min-width: 1400px) {
@@ -10841,7 +10837,6 @@ textarea.form-control-lg {
 }
 .menu li a {
   color: #404041;
-  text-transform: capitalize;
   font-weight: 500;
   transition: transform 0.3s ease-in-out;
 }
@@ -11002,11 +10997,17 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  scroll-margin-top: 6vh;
 }
 .coverage-section--title h2 {
   font-size: 3rem;
   color: #064df2;
   font-weight: bold;
+}
+@media (max-width: 575.98px) {
+  .coverage-section--title h2 {
+    font-size: 11vw;
+  }
 }
 .coverage-section--content {
   color: #6c757d;
@@ -11090,6 +11091,7 @@ textarea.form-control-lg {
 }
 
 #prices {
+  scroll-margin-top: 6vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -11125,6 +11127,11 @@ textarea.form-control-lg {
   color: #064df2;
   font-weight: bold;
 }
+@media (max-width: 575.98px) {
+  #prices .prices--title h2 {
+    font-size: 11vw;
+  }
+}
 #prices .promo {
   transition: transform 0.3s ease-in-out;
 }
@@ -11158,10 +11165,18 @@ textarea.form-control-lg {
   font-weight: 700;
 }
 
+.contact {
+  scroll-margin-top: 6vh;
+}
 .contact--title h2 {
   font-size: 3rem;
   color: #064df2;
   font-weight: bold;
+}
+@media (max-width: 575.98px) {
+  .contact--title h2 {
+    font-size: 11vw;
+  }
 }
 .contact--info a {
   text-decoration: none;
